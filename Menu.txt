@@ -1,0 +1,14 @@
+Menümüzde bulunan pizza türleri aþaðýdadýr. 
+
+1. Klasik
+2. Pastýrmalý
+3. Vejeteryan
+4. Karýþýk
+
+Menümüzde bulunan ekstralar aþaðýdadýr. 
+10. Zeytin
+11. Mantar
+12. Peynir
+13. Keçi Peyniri
+
+Bizi tercih ettiðiniz için teþekkür ederiz.
