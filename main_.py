@@ -7,8 +7,6 @@ def print_menu():
         menu = f.read()
         print(menu)
 
-
-
 # super class
 class Pizza:
     def __init__(self):
@@ -64,40 +62,35 @@ class Decorator(Pizza):
 
 
     def get_description(self):
-        return self.pizza.get_description()
+        return self.description
 
 
 # subclass
 # zeytin
-class Zeytin(Decorator):
-    def __init__(self, pizza):
-        super().__init__(pizza)
-        self.description = "İlave zeytin"
-        self.cost = 5
-
-# subclass
-class Mantar(Decorator):
-    def __init__(self, pizza):
-        super().__init__(pizza)
-        self.description = "İlave mantar"
-        self.cost = 8
-
-# subclass
 class zeytin(Decorator):
     def __init__(self, pizza):
         super().__init__(pizza)
+        self.description = "İlave zeytin eklenecektir."
+        self.cost = 5
 
+# subclass
 class mantar(Decorator):
     def __init__(self, pizza):
         super().__init__(pizza)
+        self.description = "İlave mantar eklenecektir."
+        self.cost = 8
 
 class peynir(Decorator):
     def __init__(self, pizza):
         super().__init__(pizza)
+        self.description="Ekstra peynir eklenecektir."
+        self.cost=10
 
 class keci_peyniri(Decorator):
     def __init__(self, pizza):
         super().__init__(pizza)
+        self.description="Ekstra %100 keçi peyniri eklenecektir."
+        self.cost=13
 
 
 def place_order(pizza_choice,sos_choice,name,tc,kredi_karti,sifre,aciklama):
